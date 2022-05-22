@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class 게임맵최단거리 {
 
-	private static int[][] map = new int[5][5];
+    private static int[][] map = new int[5][5];
     private static int[][] dist = new int[5][5];
     private static boolean[][] visited = new boolean[5][5];
     private static int[] dx = {1,0,-1,0};
