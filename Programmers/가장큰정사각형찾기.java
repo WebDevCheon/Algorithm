@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class °¡ÀåÅ«Á¤»ç°¢ÇüÃ£±â {
+public class ê°€ì¥í°ì •ì‚¬ê°í˜•ì°¾ê¸° {
 	
 	public static void main(String[] args) throws Exception {
 		List<String> list = new ArrayList<String>();

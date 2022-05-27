@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class ´º½ºÅ¬·¯½ºÅÍ¸µ {
+public class ë‰´ìŠ¤í´ëŸ¬ìŠ¤í„°ë§ {
 	private static ArrayList<String> list1 = new ArrayList<String>();
 	private static ArrayList<String> list2 = new ArrayList<String>();
 	private static HashMap<String,Integer> strCnt1 = new HashMap<String,Integer>();
@@ -73,8 +73,8 @@ public class ´º½ºÅ¬·¯½ºÅÍ¸µ {
 			System.out.print(list2.get(i) + " ");
 		System.exit(0);
 		*/
-		List<String> a = new ArrayList<String>();		// ±³ÁıÇÕ
-		List<String> b = new ArrayList<String>();		// ÇÕÁıÇÕ
+		List<String> a = new ArrayList<String>();		// êµì§‘í•©
+		List<String> b = new ArrayList<String>();		// í•©ì§‘í•©
 		
 		HashMap<String,Boolean> visited = new HashMap<String,Boolean>();
 
@@ -113,7 +113,7 @@ public class ´º½ºÅ¬·¯½ºÅÍ¸µ {
 				}
 			}
 			if(!flag)
-				b.add(list1.get(i));			// ÇÑ°³¸¸ ³Ö¾îÁÖ±â
+				b.add(list1.get(i));			// í•œê°œë§Œ ë„£ì–´ì£¼ê¸°
 		}
 		
 		for(int i = 0;i < list2.size();i++) {

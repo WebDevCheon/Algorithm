@@ -1,6 +1,6 @@
 package Programmers;
 
-public class ´ÙÀ½Å«¼ıÀÚ {
+public class ë‹¤ìŒí°ìˆ«ì {
 	
 	private static int OneBigNum(int n) {
         int ans = 0;

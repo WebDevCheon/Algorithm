@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class HÀÎµ¦½º {
+public class Hì¸ë±ìŠ¤ {
 
 	private static int solution(int[] citations) {
 		int n = citations.length;

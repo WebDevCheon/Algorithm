@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class JadenCase¹®ÀÚ¿­¸¸µé±â {
+public class JadenCaseë¬¸ìì—´ë§Œë“¤ê¸° {
 	
 	public static String solution(String s) {
         StringTokenizer st = new StringTokenizer(s);

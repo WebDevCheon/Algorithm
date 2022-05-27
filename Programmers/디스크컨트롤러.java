@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class µğ½ºÅ©ÄÁÆ®·Ñ·¯ {
+public class ë””ìŠ¤í¬ì»¨íŠ¸ë¡¤ëŸ¬ {
 	
 	private static PriorityQueue<disk> pq = new PriorityQueue<disk>();
 	

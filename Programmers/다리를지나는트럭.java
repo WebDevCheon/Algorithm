@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class ´Ù¸®¸¦Áö³ª´ÂÆ®·° {
+public class ë‹¤ë¦¬ë¥¼ì§€ë‚˜ëŠ”íŠ¸ëŸ­ {
 
 	 public static int solution(int bridge_length, int weight, int[] truck_weights) {
 	        int ans = 0;
@@ -23,9 +23,9 @@ public class ´Ù¸®¸¦Áö³ª´ÂÆ®·° {
 	        
 	        while(!q.isEmpty()) {
 	        	ans++;
-	        	/*					 ½Ã°£ÀÌ Áö³²¿¡ µû¶ó ¾Ë¾Æº¸´Â Ãâ·Â
+	        	/*					 ì‹œê°„ì´ ì§€ë‚¨ì— ë”°ë¼ ì•Œì•„ë³´ëŠ” ì¶œë ¥
 	        	Queue<Integer> tmp = new LinkedList<Integer>();
-	        	System.out.print(ans + "ÃÊ : ");
+	        	System.out.print(ans + "ì´ˆ : ");
 	        	while(!q.isEmpty()) {
 	        		int k = q.poll();
 	        		System.out.print(k + " ");
@@ -39,14 +39,14 @@ public class ´Ù¸®¸¦Áö³ª´ÂÆ®·° {
 	        		continue;
 	        	
 	        	if(what > 0) {
-	        		now_w -= what;					// »©°í
-	        		if(now_w + w_truck[idx] <= w) {		// 1.³Ö°í
+	        		now_w -= what;					// ë¹¼ê³ 
+	        		if(now_w + w_truck[idx] <= w) {		// 1.ë„£ê³ 
 	        			now_w += w_truck[idx];
 	        			q.add(w_truck[idx++]);
 	        		} else
 	        			q.add(0);						
 	        	} else {
-	        		if(now_w + w_truck[idx] <= w) {			// 2.³Ö°í
+	        		if(now_w + w_truck[idx] <= w) {			// 2.ë„£ê³ 
 	        			now_w += w_truck[idx];
 	        			q.add(w_truck[idx++]);
 	        		} else

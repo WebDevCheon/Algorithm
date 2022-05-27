@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class °Å¸®µÎ±âÈ®ÀÎÇÏ±â {
+public class ê±°ë¦¬ë‘ê¸°í™•ì¸í•˜ê¸° {
 
 	private static int n = 5;
 	private static boolean[][] visited;
@@ -73,9 +73,9 @@ public class °Å¸®µÎ±âÈ®ÀÎÇÏ±â {
 	
 	public static int[] solution(String[][] places) {
 		int[] ans = new int[n];
-		for(int a = 0;a < n;a++) {          // ¹æ 1°³¾¿ °Ë»ç
+		for(int a = 0;a < n;a++) {          // ë°© 1ê°œì”© ê²€ì‚¬
             List<pos> list = new ArrayList<pos>();
-			for(int i = 0;i < n;i++) {      // ¹æ 1,2,3,4,5¸¦ ÇÏ³ª¾¿ ¹èÄ¡
+			for(int i = 0;i < n;i++) {      // ë°© 1,2,3,4,5ë¥¼ í•˜ë‚˜ì”© ë°°ì¹˜
 				String str = places[a][i];
 				for(int j = 0;j < n;j++) {
 					map[i][j] = str.charAt(j);

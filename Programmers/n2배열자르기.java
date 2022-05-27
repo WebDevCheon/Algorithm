@@ -1,6 +1,6 @@
 package Programmers;
 
-public class n2¹è¿­ÀÚ¸£±â {
+public class n2ë°°ì—´ìë¥´ê¸° {
 	
 	
 	public static int[] solution(int n,long left,long right) {

@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class °¡ÀåÅ«¼ö {
+public class ê°€ì¥í°ìˆ˜ {
 	
 	private static ArrayList<String> list = new ArrayList<String>();
 	

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class ´ÜÃ¼»çÁøÂï±â {
+public class ë‹¨ì²´ì‚¬ì§„ì°ê¸° {
 
 	private static String[] arr = new String[8];
 	private static String[] charac = {"A","C","F","J","M","N","R","T"};

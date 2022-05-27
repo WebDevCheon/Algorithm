@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class ´Ù´Ü°èÄ©¼ÖÆÇ¸Å {
+public class ë‹¤ë‹¨ê³„ì¹«ì†”íŒë§¤ {
 
 	private static Map<String,String> childToParent = new HashMap<String,String>();
 	private static Map<String,Integer> nowToNum = new HashMap<String,Integer>();
@@ -35,7 +35,7 @@ public class ´Ù´Ü°èÄ©¼ÖÆÇ¸Å {
 			
 			while(!now.equals("-")) {
 				int profitsForParent = p / 10;
-				int nowProfit = p - profitsForParent;		// ÇöÀçÀÇ ÀÌÀÍ
+				int nowProfit = p - profitsForParent;		// í˜„ì¬ì˜ ì´ìµ
 				
 				ans[nowToNum.get(now)] += nowProfit;
 				

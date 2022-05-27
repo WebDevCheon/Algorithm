@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class ³×Æ®¿öÅ© {
+public class ë„¤íŠ¸ì›Œí¬ {
 
 	private static int[][] computer;
 	private static int n;

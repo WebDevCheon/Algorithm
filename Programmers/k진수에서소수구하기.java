@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class kÁø¼ö¿¡¼­¼Ò¼ö±¸ÇÏ±â {
+public class kì§„ìˆ˜ì—ì„œì†Œìˆ˜êµ¬í•˜ê¸° {
 
 	private static boolean isPrime(long n) {
 		if(n == 1)

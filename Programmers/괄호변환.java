@@ -2,7 +2,7 @@ package Programmers;
 
 import java.util.Stack;
 
-public class °ıÈ£º¯È¯ {
+public class ê´„í˜¸ë³€í™˜ {
 	
 	private static boolean isCorrect(String s) {
 		Stack<Character> stk = new Stack<Character>();
@@ -17,7 +17,7 @@ public class °ıÈ£º¯È¯ {
 		return true;
 	}
 	
-	public static String solution(String s) {			// ¿Ã¹Ù¸¥ ¹®ÀÚ¿­À» ¹İÈ¯ÇØÁÖ´Â ¸Ş¼Òµå
+	public static String solution(String s) {			// ì˜¬ë°”ë¥¸ ë¬¸ìì—´ì„ ë°˜í™˜í•´ì£¼ëŠ” ë©”ì†Œë“œ
 		if(s.length() == 0)
 			return s;
 		StringBuilder sb = new StringBuilder(s);

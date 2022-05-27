@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class NÁø¼ö°ÔÀÓ {
+public class Nì§„ìˆ˜ê²Œì„ {
 
 	public static String solution(int n,int t,int m,int p) {
 		List<String> list = new ArrayList<String>();

@@ -1,6 +1,6 @@
 package Programmers;
 
-public class ´ÙÆ®°ÔÀÓ {
+public class ë‹¤íŠ¸ê²Œì„ {
 	
 	static class b {
 		int front;

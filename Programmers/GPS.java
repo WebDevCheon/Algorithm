@@ -38,7 +38,7 @@ public class GPS {
 		}
 		if(flag)
 			dfs(time + 1,cnt);
-		else {			// gps ¿À·ù³­ °÷ Ã³¸®
+		else {			// gps ì˜¤ë¥˜ë‚œ ê³³ ì²˜ë¦¬
 			if(time + 1 == k)
 				return;
 			for(int i = 0;i < nextlist.size();i++) {

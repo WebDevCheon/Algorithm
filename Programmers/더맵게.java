@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class ´õ¸Ê°Ô {		// 16ºĞ ¼Ò¿ä
+public class ë”ë§µê²Œ {		// 16ë¶„ ì†Œìš”
 	
 	public static int solution(int[] scoville, int K) {
 		PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
@@ -15,7 +15,7 @@ public class ´õ¸Ê°Ô {		// 16ºĞ ¼Ò¿ä
 		int min = pq.peek();
 		boolean flag = false;
 		
-		while(pq.size() > 1) {		// ÄÚµå »ìÂ¦ ´õ·¯¿ò -> while(pq.peek() <= K)·Î ÇÏ°í ¹Ù·Î ¾Æ·¡ if(pq.size() == 1) return; ÀÌ ³ª¾ÒÀ½
+		while(pq.size() > 1) {		// ì½”ë“œ ì‚´ì§ ë”ëŸ¬ì›€ -> while(pq.peek() <= K)ë¡œ í•˜ê³  ë°”ë¡œ ì•„ë˜ if(pq.size() == 1) return; ì´ ë‚˜ì•˜ìŒ
 			int v1 = 0;
 			int v2 = 0;
 			

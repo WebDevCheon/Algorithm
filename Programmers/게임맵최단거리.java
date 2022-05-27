@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class °ÔÀÓ¸ÊÃÖ´Ü°Å¸® {
+public class ê²Œì„ë§µìµœë‹¨ê±°ë¦¬ {
 
     private static int[][] map = new int[5][5];
     private static int[][] dist = new int[5][5];

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class N°³ÀÇÃÖ¼Ò°ø¹è¼ö {
+public class Nê°œì˜ìµœì†Œê³µë°°ìˆ˜ {
 	
 	private static int[] k = new int[101];
     

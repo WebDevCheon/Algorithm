@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class �ܾȯ {
+public class 단어변환 {
 	
 	private static int n;
 	private static int ans = Integer.MAX_VALUE;

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class ±â´É°³¹ß {
+public class ê¸°ëŠ¥ê°œë°œ {
 
 	private static int n;
 	private static List<Integer> p = new ArrayList<Integer>();

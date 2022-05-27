@@ -2,7 +2,7 @@ package Programmers;
 
 import java.util.Arrays;
 
-public class K¹øÂ°¼ö {
+public class Kë²ˆì§¸ìˆ˜ {
 	
 	public static int[] solution(int[] array, int[][] commands) {
         int n = commands.length;

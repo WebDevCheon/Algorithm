@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class °¡Àå¸Õ³ëµå {
+public class ê°€ìž¥ë¨¼ë…¸ë“œ {
 	
 	private static ArrayList<Integer>[] edge;
 	private static boolean[] visited;

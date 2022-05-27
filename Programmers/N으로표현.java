@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class NÀ¸·ÎÇ¥Çö {
+public class Nìœ¼ë¡œí‘œí˜„ {
 
 	private static ArrayList<Integer>[] dp = new ArrayList[9];
 	private static int n;					// 5
@@ -106,7 +106,7 @@ public class NÀ¸·ÎÇ¥Çö {
 							}
 							}
 							/*
-							if(l == 0) {		// ´õÇÏ±â
+							if(l == 0) {		// ë”í•˜ê¸°
 								int data = num + tmp;
 								if(data > 32000 || visited[data])
 									continue;
@@ -116,7 +116,7 @@ public class NÀ¸·ÎÇ¥Çö {
 									System.out.println(i);
 									System.exit(0);
 								}
-							} else if(l == 1) {	// °öÇÏ±â
+							} else if(l == 1) {	// ê³±í•˜ê¸°
 								int data = num * tmp;
 								if(data > 32000 || visited[data])
 									continue;
@@ -130,7 +130,7 @@ public class NÀ¸·ÎÇ¥Çö {
 									System.out.println(i);
 									System.exit(0);
 								}
-							} else if(l == 2) {	// »©±â
+							} else if(l == 2) {	// ë¹¼ê¸°
 								int data = num - tmp;
 								if(data < 0 || visited[data])
 									continue;
@@ -140,7 +140,7 @@ public class NÀ¸·ÎÇ¥Çö {
 									System.out.println(i);
 									System.exit(0);
 								}
-							} else {			// ³ª´©±â
+							} else {			// ë‚˜ëˆ„ê¸°
 								if(tmp == 0)
 									continue;
 								int data = num / tmp;
