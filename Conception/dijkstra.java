@@ -69,7 +69,7 @@ public class dijkstra {
     		int v2 = Integer.parseInt(st.nextToken());
     		int p = Integer.parseInt(st.nextToken());
     		graph.get(v1).add(new node(v2,p));
-    		// ¾ç¹æÇâ ±×·¡ÇÁÀÏ¶§,  graph.get(v2).add(new node(v1,p));
+    		// ì–‘ë°©í–¥ ê·¸ë˜í”„ì¼ë•Œ,  graph.get(v2).add(new node(v1,p));
     	}
     	Arrays.fill(d,Integer.MAX_VALUE);
     }
