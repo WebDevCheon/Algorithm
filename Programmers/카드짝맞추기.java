@@ -20,6 +20,7 @@ public class 카드짝맞추기 {
 	private static int[] dy = {0,1,0,-1};
 	private static ArrayList<pos>[] posList = new ArrayList[8];
 	private static int tmp = Integer.MAX_VALUE;
+	private static pos[] pick_bfs;
 	
 	static class pos {
 		int x;
@@ -32,7 +33,7 @@ public class 카드짝맞추기 {
 			this.dist = dist;
 		}
 	}
-	
+
 	private static boolean isRange(int y,int x) {
 		return (x >= 0 && x < n && y >= 0 && y < n);
 	}
@@ -87,8 +88,6 @@ public class 카드짝맞추기 {
 		}
 		return null;
 	}
-	
-	private static pos[] pick_bfs;
 	
 	private static void pick_dfs(int idx,int cnt,int sy,int sx,int[][] board) {
 		if(idx == cnt) {
