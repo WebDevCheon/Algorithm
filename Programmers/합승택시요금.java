@@ -1,6 +1,6 @@
 package Programmers;
 
-public class гу╫бец╫ц©Д╠щ {
+public class М∙╘Л┼╧М┐²Л▀°Л ■Й╦┬ {
 	
 	public static int solution(int n, int s, int a, int b, int[][] fares) {
 		int[][] dist = new int[n + 1][n + 1];
@@ -38,12 +38,4 @@ public class гу╫бец╫ц©Д╠щ {
         }
         return max;
     }
-	
-	public static void main(String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		
-		
-		
-	}
 }
