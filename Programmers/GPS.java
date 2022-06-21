@@ -8,74 +8,62 @@ import java.util.StringTokenizer;
 
 public class GPS {
 
-	private static int n;
-	private static int m;
-	private static ArrayList<Integer>[] edge_list;
-	private static int k;
+	private static ArrayList<Integer>[] rel;
 	private static int[] gps_log;
 	private static int ans = Integer.MAX_VALUE;
+	private static int[][] dp;		
+	private static boolean[][] visited;
 	
-	private static void insertEdge(int a,int b) {
-		edge_list[a].add(b); edge_list[b].add(a);
-	}
-	
-	private static void dfs(int time,int cnt) {
-		if(time == k) {
-			ans = Math.min(cnt,ans);
-			return;
+	private static int dfs(int v,int t,int k) {		
+		if(visited[v][t])
+			return dp[v][t];
+		visited[v][t] = true;
+
+		if(t == k) {
+            if(gps_log[t] == v) {       
+            	return 0;
+            } else
+            	return 1;
 		}
 		
-		int now = gps_log[time];
-		boolean flag = false;
-		List<Integer> nextlist = new ArrayList<Integer>();
-		for(int i = 0;i < edge_list[now].size();i++) {
-			int next = edge_list[now].get(i);
-			nextlist.add(next);
-			if(next == gps_log[time + 1] || now == gps_log[time + 1]) {
-				flag = true;
-				break;
-			}
+		for(int i = 0;i < rel[v].size();i++) {		
+			int next = rel[v].get(i);
+            
+			if(gps_log[t + 1] != next)
+				dp[v][t] = Math.min(dfs(next,t + 1,k) + 1,dp[v][t]);
+			else
+				dp[v][t] = Math.min(dfs(next,t + 1, k),dp[v][t]);
 		}
-		if(flag)
-			dfs(time + 1,cnt);
-		else {			// gps 오류난 곳 처리
-			if(time + 1 == k)
-				return;
-			for(int i = 0;i < nextlist.size();i++) {
-				int next = nextlist.get(i);
-				for(int j = 0;j < edge_list[next].size();j++) {
-					int tmpnext = edge_list[next].get(j);
-					if(tmpnext == gps_log[time + 1])
-						dfs(time + 1,cnt + 1);
-				}
-			}
-		}
+		if(gps_log[t + 1] == v)			
+			dp[v][t] = Math.min(dfs(v,t + 1,k),dp[v][t]);
+		return dp[v][t];
 	}
 	
-	public static void main(String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		n = Integer.parseInt(st.nextToken());
-		m = Integer.parseInt(st.nextToken());
-		k = Integer.parseInt(st.nextToken());
-		edge_list = new ArrayList[n + 1];
-		gps_log = new int[k + 1];
+	public static int solution(int n, int m, int[][] edge_list, int k, int[] log) {
+		rel = new ArrayList[n + 1];
 		for(int i = 1;i < n + 1;i++)
-			edge_list[i] = new ArrayList<Integer>();
+			rel[i] = new ArrayList<Integer>();
 		for(int i = 0;i < m;i++) {
-			st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			insertEdge(a,b);
+			int v1 = edge_list[i][0];
+			int v2 = edge_list[i][1];
+			rel[v1].add(v2);
+			rel[v2].add(v1);
 		}
-		st = new StringTokenizer(br.readLine());
-		for(int i = 1;i < k + 1;i++) {
-			gps_log[i] = Integer.parseInt(st.nextToken());
-		}
-		dfs(1,0);
-		if(ans == Integer.MAX_VALUE)
-			System.out.println(-1);
-		else
-			System.out.println(ans);
-	}
+		gps_log = new int[k + 1];
+		for(int i = 1;i < k + 1;i++)
+			gps_log[i] = log[i - 1];
+		dp = new int[n + 1][k + 1];
+		visited = new boolean[n + 1][k + 1];
+		for(int i = 1;i <= n;i++)
+			Arrays.fill(dp[i],Integer.MAX_VALUE);
+		dfs(gps_log[1],1,k);
+        
+        if(ans != Integer.MAX_VALUE)
+		    return ans;
+        else
+            return -1;
+    }	
+
+
+
 }
